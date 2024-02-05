@@ -10,10 +10,11 @@ const Result = ({ result }) => {
     : "path_to_placeholder_image";
 
   return (
-    <div className="result border border-grey border-4 mb-4">
+    <div className="result border border-grey border-4 mb-4 bounce-top">
       <img src={fullPosterPath} alt="" />
 
       <h5>{result.title}</h5>
+      <h6>Rating: {result.vote_average}</h6>
     </div>
   );
 };

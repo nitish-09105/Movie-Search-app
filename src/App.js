@@ -22,7 +22,7 @@ function App() {
       axios.get(`https://api.themoviedb.org/3/search/movie?api_key=16d7a7100dc2f9e880b1decab22ee62f&query=${state.search}`)
         .then(res => {
           setState(prevState => {
-
+            console.log(res.data.results)
             return { ...prevState, results: res.data.results }
           })
         })
